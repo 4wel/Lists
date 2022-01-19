@@ -739,6 +739,5 @@ namespace ListsTests
 
             Assert.Fail();
         }
-
     }
 }

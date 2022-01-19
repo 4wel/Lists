@@ -17,7 +17,6 @@ namespace ListsConsole
             }
             Console.WriteLine();
 
-
             try
             {
 
@@ -57,8 +56,6 @@ namespace ListsConsole
                 Console.Write($"{item}\t");
             }
             Console.WriteLine();
-
         }
-
     }
 }

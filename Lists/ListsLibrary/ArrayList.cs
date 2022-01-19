@@ -175,7 +175,6 @@ namespace ListsLibrary
         public void AddToFrontMulti(int[] array)
         {
             int lenght = array.Length;
-            int initialLenght = Count;
             var newSize = Count + array.Length;
             int j = 0;
 
@@ -224,6 +223,7 @@ namespace ListsLibrary
         public int GetFirstIndexByValue(int value)
         {
             int result = -1;
+            
             for (int i = 0; i < Count; i++)
             {
                 if (_array[i] == value)
@@ -256,9 +256,9 @@ namespace ListsLibrary
             int[] array = new int[Count];
 
             for (int i = 0; i < Count; i++)
-                {
-                    array[Count - i - 1] = _array[i];
-                }
+            {
+                array[Count - i - 1] = _array[i];
+            }
 
             _array = array;
         }
@@ -433,7 +433,7 @@ namespace ListsLibrary
                     }
 
                     int newSize = Count - 1;
-                    
+
                     Resize(newSize);
                 }
             }
@@ -459,7 +459,6 @@ namespace ListsLibrary
         public void AddIListToFront(IList list)
         {
             int lenght = list.GetLenght();
-            int initialLenght = Count;
             int j = 0;
 
             Resize(Count + lenght);
@@ -484,7 +483,6 @@ namespace ListsLibrary
             }
 
             int lenght = list.GetLenght();
-            int initialLenght = Count;
             int j = 0;
 
             Resize(Count + lenght);
@@ -520,6 +518,7 @@ namespace ListsLibrary
         public bool Equals([AllowNull] IList list)
         {
             bool result = true;
+            
             if (list != null && list.GetLenght() == Count)
             {
                 for (int i = 0; i < Count; ++i)
