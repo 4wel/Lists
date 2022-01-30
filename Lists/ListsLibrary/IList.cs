@@ -8,34 +8,21 @@ namespace ListsLibrary
 {
     public interface IList
     {
-        void AddToBack(int element);
-        void AddToFront(int element);
-        void AddByIndex(int element, int index);
-        void RemoveFromFront();
-        void RemoveFromBack();
-        void RemoveByIndex(int index);
-        void RemoveFromBackMulti(int count);
-        void RemoveFromFrontMulti(int count);
-        void RemoveByIndexMulti(int count, int index);
-        void AddToFrontMulti(int[] array);
-        void AddToBackMulti(int[] array);
+        int Lenght { get; }
+        int Max { get; }
+        int Min { get; }
+        int MaxElementIndex { get; }
+        int MinElementIndex { get; }
 
-        int GetLenght();
-        int GetValueByIndex(int index);
-        int GetFirstIndexByValue(int value);
-        void SetElementByIndex(int element, int index);
+        void Add(int element, int index);
+        void Add(int[] array, int index);
+        void Add(IList list, int index);
+        void Remove(int count, int index);
+        int FindFirst(int value);
         void Reverse();
-        int GetMaxElement();
-        int GetMinElement();
-        int GetMaxElementIndex();
-        int GetMinElementIndex();
-        void SortAsc();
-        void SortDesc();
+        void Sort(bool ascending = true);
         int RemoveFirstByValue(int value);
         int RemoveAllByValue(int value);
-        void AddIListToBack(IList list);
-        void AddIListToFront(IList list);
-        void AddIListByIndex(IList list, int index);
 
         public IEnumerator<int> GetEnumerator();
         public int this[int index] { get; set; }

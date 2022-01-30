@@ -8,7 +8,7 @@ namespace ListsConsole
     {
         static void Main(string[] args)
         {
-            ArrayList array = new ArrayList(new[] { 15, 2, 333, 4, 67, 199, 18 });
+            ArrayList array = new ArrayList(new[] { 1, 2, 3, 4, 5 });
             ArrayList arrayadd = new ArrayList(new[] { 10, 100, 1000 });
 
             foreach (var item in array)
@@ -19,6 +19,16 @@ namespace ListsConsole
 
             try
             {
+                // array.Add(66, array.GetLenght());
+                // array.Add(66, 0);
+                //array.Add(new[] { 4, 5, 6 }, 8);
+                //int i = array.MinElementIndex;
+                //array.Sort(true);
+                //array.Reverse();
+                // int i = array.RemoveAllByValue(333);
+                //Console.WriteLine(i);
+                //array.Remove(2, array.Lenght - 3);
+
 
                 //int i = array.GetLenght();
                 //array.AddToFront(10);
@@ -41,6 +51,8 @@ namespace ListsConsole
                 // array.AddIListToBack(arrayadd);
                 //array.AddIListToFront(arrayadd);
                 //array.AddIListByIndex(arrayadd, 100);
+
+                //array.Add(arrayadd, array.Lenght);
             }
             catch (IndexOutOfRangeException)
             {
