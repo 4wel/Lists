@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListsConsole", "ListsConsol
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListsLibrary", "ListsLibrary\ListsLibrary.csproj", "{FB84F765-B278-4303-A954-FF75733D3332}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ListsTests", "ListsTests\ListsTests.csproj", "{7EF61C6D-AEC8-4C86-8205-EB182C8623FF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{FB84F765-B278-4303-A954-FF75733D3332}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FB84F765-B278-4303-A954-FF75733D3332}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FB84F765-B278-4303-A954-FF75733D3332}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EF61C6D-AEC8-4C86-8205-EB182C8623FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EF61C6D-AEC8-4C86-8205-EB182C8623FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EF61C6D-AEC8-4C86-8205-EB182C8623FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EF61C6D-AEC8-4C86-8205-EB182C8623FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
